@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pm2 start index.js --attach --name ss",
+    "stop": "pm2 stop ss",
+    "restart": "pm2 restart ss",
+    "delete": "pm2 delete ss",
+    "logs": "pm2 logs ss"
   },
   "keywords": [],
   "author": "",
